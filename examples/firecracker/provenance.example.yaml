@@ -1,0 +1,15 @@
+# Investigation fixture only. This is not a proposed final CloudStack manifest schema.
+extension:
+  name: firecracker
+  type: Orchestrator
+  entrypoint: firecracker.py
+
+source:
+  url: https://github.com/msinhore/cloudstack-firecracker-extension
+  discovery_ref: main
+  resolved_revision: 8ebcae6724f3e047f0f05297695b420bdfdca0a1
+
+integrity:
+  algorithm: SHA-512
+  # Populate from the exact installed firecracker.py bytes before enabling.
+  expected_entrypoint_sha512: <128-character-sha512>
